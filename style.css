@@ -37,3 +37,15 @@ body, html {
         margin: 0;
         padding: 0;
     }
+
+#inicio {
+        background-color: #b88d0a83;
+        padding: 20px;
+        border-bottom: 2px solid #ccc;
+    }
+
+#receitas {
+        background-color: #e6ffe6;
+        padding: 20px;
+        border-bottom: 2px dashed #999;
+}
