@@ -1,87 +1,52 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<form action="#" method="post">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" required>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Faça sua encomenda </title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <label for="endereco">Endereço:</label>
+  <input type="text" id="endereco" name="endereco" required>
 
-<body style="background-color: lightpink;">
-  <main>
-    <img src="banner.png" width="100%" height="400">
-        <h1>FAÇA AQUI SUA ENCOMENDA</h1>
-    <div class="form-container">
-  <h2>Faça sua Encomenda</h2>
-  <form action="#" method="post">
+  <label for="telefone">Telefone:</label>
+  <input type="tel" id="telefone" name="telefone" required>
 
-    <!-- Dados do Cliente -->
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" required>
+  <label for="whatsapp">WhatsApp:</label>
+  <input type="tel" id="whatsapp" name="whatsapp" required>
 
-    <label for="endereco">Endereço:</label>
-    <input type="text" id="endereco" name="endereco" required>
+  <label for="produto">O que deseja encomendar?</label>
+  <select id="produto" name="produto" required>
+    <option value="">Selecione uma opção</option>
+    <option value="bolos">Bolos</option>
+    <option value="salgados">Salgados</option>
+    <option value="sobremesa">Sobremesa</option>
+    <option value="outros">Outros</option>
+  </select>
 
-    <label for="telefone">Telefone:</label>
-    <input type="tel" id="telefone" name="telefone" required>
+  <label for="descricao">Descreva seu pedido:</label>
+  <textarea id="descricao" name="descricao" rows="4" required></textarea>
 
-    <label for="whatsapp">WhatsApp:</label>
-    <input type="tel" id="whatsapp" name="whatsapp" required>
+  <label for="restricao">Possui alguma restrição alimentar?</label>
+  <textarea id="restricao" name="restricao" rows="2" placeholder="Ex: sem lactose, sem glúten..."></textarea>
 
-    <!-- Tipo de Produto -->
-    <label for="produto">O que deseja encomendar?</label>
-    <select id="produto" name="produto" required>
-      <option value="">Selecione uma opção</option>
-      <option value="bolos">Bolos</option>
-      <option value="salgados">Salgados</option>
-      <option value="sobremesa">Sobremesa</option>
-      <option value="outros">Outros</option>
-    </select>
+  <label for="pagamento">Forma de pagamento:</label>
+  <select id="pagamento" name="pagamento" required>
+    <option value="">Selecione uma opção</option>
+    <option value="pix">Pix</option>
+    <option value="cartao">Cartão de Crédito</option>
+    <option value="boleto">Boleto</option>
+    <option value="dinheiro">Dinheiro na entrega</option>
+  </select>
 
-    <!-- Descrição do Pedido -->
-    <label for="descricao">Descreva seu pedido:</label>
-    <textarea id="descricao" name="descricao" rows="4" required></textarea>
+  <label for="data">Data da encomenda:</label>
+  <input type="date" id="data" name="data" required>
 
-    <!-- Restrições Alimentares -->
-    <label for="restricao">Possui alguma restrição alimentar?</label>
-    <textarea id="restricao" name="restricao" rows="2" placeholder="Ex: sem lactose, sem glúten..."></textarea>
+  <label for="hora">Horário desejado:</label>
+  <input type="time" id="hora" name="hora" required>
 
-    <!-- Forma de Pagamento -->
-    <label for="pagamento">Forma de pagamento:</label>
-    <select id="pagamento" name="pagamento" required>
-      <option value="">Selecione uma opção</option>
-      <option value="pix">Pix</option>
-      <option value="cartao">Cartão de Crédito</option>
-      <option value="boleto">Boleto</option>
-      <option value="dinheiro">Dinheiro na entrega</option>
-    </select>
+  <label for="entrega">Como deseja receber:</label>
+  <select id="entrega" name="entrega" required>
+    <option value="">Selecione uma opção</option>
+    <option value="entrega">Entrega</option>
+    <option value="retirada">Retirada</option>
+  </select>
 
-    <!-- Data e Hora -->
-    <label for="data">Data da encomenda:</label>
-    <input type="date" id="data" name="data" required>
-
-    <label for="hora">Horário desejado:</label>
-    <input type="time" id="hora" name="hora" required>
-
-    <!-- Entrega ou Retirada -->
-    <label for="entrega">Como deseja receber:</label>
-    <select id="entrega" name="entrega" required>
-      <option value="">Selecione uma opção</option>
-      <option value="entrega">Entrega</option>
-      <option value="retirada">Retirada</option>
-    </select>
-
-    <!-- Botão de envio -->
-    <button type="submit">Enviar Pedido</button>
-
-  </form>
-</div>
-    
-        
-  </main>
-
-<script src="script.js"></script>
-</body>
-</html>
-
+  <button type="submit">Enviar Pedido</button>
+</form>
