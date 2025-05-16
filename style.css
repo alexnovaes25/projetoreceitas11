@@ -1,56 +1,5 @@
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  border: 2px solid black;
-  padding: 8px;
-  text-align: center;
-}
-
-th {
-  background-color: red;
-  color: yellow;
-}
-
-h1 {
-  color: brown;
-  text-align: center;
-}
-
-h2 {
-  color: brown;
-  text-align: center;
-}
-
-p, a, li {
-  color: brown;
-}
-
-body, html {
-  margin: 0;
-  padding: 0;
-}
-
-/* Seções específicas */
-#inicio {
-  background-color: #b88d0a83;
-  padding: 20px;
-  border-bottom: 2px solid #ccc;
-}
-
-#receitas {
-  background-color: #1d9a1d;
-  padding: 20px;
-  border-bottom: 2px dashed #999;
-  text-align: center;
-}
-
-/* ====== ESTILO DO FORMULÁRIO ====== */
-
 .form-container {
-  max-width: 700px;
+  max-width: 600px;
   margin: 30px auto;
   background-color: #fff5f8;
   padding: 30px;
@@ -78,9 +27,7 @@ form textarea {
   font-size: 16px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  box-sizing: border-box;
   background-color: #fff;
-  color: #333;
 }
 
 form textarea {
@@ -96,7 +43,6 @@ form button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 form button:hover {
